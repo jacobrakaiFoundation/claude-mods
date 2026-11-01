@@ -1,0 +1,19 @@
+{
+  "name": "voice-fixups",
+  "version": "0.1.0",
+  "description": "Custom vocabulary for dictated prompts: replaces spoken phrases (\"cube cuttle\") with what you meant (\"kubectl\"), whole words, any case",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "userConfig": {
+    "replacements": {
+      "type": "string",
+      "multiple": true,
+      "title": "Replacements",
+      "description": "One per entry as \"spoken => written\" (e.g. \"cube cuttle => kubectl\"). ~/.claude/voice-fixups.json and the project's .claude/voice-fixups.json add to these and win on the same phrase.",
+      "default": []
+    }
+  }
+}

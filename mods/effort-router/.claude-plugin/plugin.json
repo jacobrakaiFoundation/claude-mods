@@ -1,0 +1,19 @@
+{
+  "name": "effort-router",
+  "version": "0.1.0",
+  "description": "Sets a turn's reasoning effort from an inline !low / !medium / !high / !xhigh / !max token or from keyword rules, and strips the token from the prompt",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "userConfig": {
+    "rules": {
+      "type": "string",
+      "multiple": true,
+      "title": "Keyword rules",
+      "description": "Prompts starting with a phrase run at a level, one rule per entry as \"phrase => level\" (e.g. \"quick => low\"). An inline !level token wins over a rule.",
+      "default": []
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "skill-status",
+  "version": "0.1.0",
+  "description": "Shows the skill the current turn is running in the status line under the prompt, cleared when the turn ends",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods"
+}

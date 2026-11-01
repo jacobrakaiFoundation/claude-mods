@@ -1,0 +1,25 @@
+{
+  "name": "session-namer",
+  "version": "0.1.0",
+  "description": "Lets Claude rename its own session with a rename_session tool, and names an unnamed session after its first answer",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "autoName": {
+      "type": "boolean",
+      "title": "Name new sessions",
+      "description": "After the first answer, name a session that has no name yet with a short title from a small model.",
+      "default": true
+    },
+    "titleModel": {
+      "type": "string",
+      "title": "Title model",
+      "description": "The model that writes the automatic title, as /model takes it (an alias such as haiku, or a full id).",
+      "default": "haiku"
+    }
+  }
+}

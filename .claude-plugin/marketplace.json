@@ -1,10 +1,93 @@
 {
   "name": "claude-mods",
-  "owner": { "name": "Jacobrakai Foundation" },
-  "description": "Claude Code mods from the Jacobrakai Foundation: usage meters, named tool groups and a fixed turn word",
+  "owner": {
+    "name": "Jacobrakai Foundation"
+  },
+  "description": "Claude Code mods from the Jacobrakai Foundation, each filling a top-requested gap in anthropics/claude-code",
   "plugins": [
-    { "name": "usage-meter", "source": "./mods/usage-meter" },
-    { "name": "tool-group-names", "source": "./mods/tool-group-names" },
-    { "name": "turn-word", "source": "./mods/turn-word" }
+    {
+      "name": "assisted-by",
+      "source": "./mods/assisted-by"
+    },
+    {
+      "name": "buddy",
+      "source": "./mods/buddy"
+    },
+    {
+      "name": "compact-diffs",
+      "source": "./mods/compact-diffs"
+    },
+    {
+      "name": "compact-tool",
+      "source": "./mods/compact-tool"
+    },
+    {
+      "name": "effort-router",
+      "source": "./mods/effort-router"
+    },
+    {
+      "name": "idle-compact",
+      "source": "./mods/idle-compact"
+    },
+    {
+      "name": "idle-notify",
+      "source": "./mods/idle-notify"
+    },
+    {
+      "name": "latex-unicode",
+      "source": "./mods/latex-unicode"
+    },
+    {
+      "name": "no-auto-plan",
+      "source": "./mods/no-auto-plan"
+    },
+    {
+      "name": "prefer-builtin-tools",
+      "source": "./mods/prefer-builtin-tools"
+    },
+    {
+      "name": "prompt-queue",
+      "source": "./mods/prompt-queue"
+    },
+    {
+      "name": "session-namer",
+      "source": "./mods/session-namer"
+    },
+    {
+      "name": "session-style",
+      "source": "./mods/session-style"
+    },
+    {
+      "name": "skill-blocklist",
+      "source": "./mods/skill-blocklist"
+    },
+    {
+      "name": "skill-status",
+      "source": "./mods/skill-status"
+    },
+    {
+      "name": "state-band",
+      "source": "./mods/state-band"
+    },
+    {
+      "name": "timestamps",
+      "source": "./mods/timestamps"
+    },
+    {
+      "name": "tool-group-names",
+      "source": "./mods/tool-group-names"
+    },
+    {
+      "name": "turn-word",
+      "source": "./mods/turn-word"
+    },
+    {
+      "name": "usage-meter",
+      "source": "./mods/usage-meter"
+    },
+    {
+      "name": "voice-fixups",
+      "source": "./mods/voice-fixups"
+    }
   ]
 }

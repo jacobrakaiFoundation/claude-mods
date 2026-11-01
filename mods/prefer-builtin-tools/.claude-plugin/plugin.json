@@ -1,0 +1,48 @@
+{
+  "name": "prefer-builtin-tools",
+  "version": "0.1.0",
+  "description": "Turns back simple Bash commands (cat, head, tail, grep, rg, find, sed -i, echo > file) whose job Read, Grep, Glob, Edit or Write does better, naming the tool to use",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "userConfig": {
+    "read": {
+      "type": "boolean",
+      "title": "cat / head / tail / sed -n → Read",
+      "description": "Turn back reading one file with cat, head, tail or sed -n and point to the Read tool.",
+      "default": true
+    },
+    "grep": {
+      "type": "boolean",
+      "title": "grep / rg → Grep",
+      "description": "Turn back searching file contents with grep, egrep or rg and point to the Grep tool.",
+      "default": true
+    },
+    "glob": {
+      "type": "boolean",
+      "title": "find -name → Glob",
+      "description": "Turn back finding files by name with find and point to the Glob tool.",
+      "default": true
+    },
+    "edit": {
+      "type": "boolean",
+      "title": "sed -i → Edit",
+      "description": "Turn back a literal sed -i substitution in one file and point to the Edit tool.",
+      "default": true
+    },
+    "write": {
+      "type": "boolean",
+      "title": "echo / cat heredoc > file → Write",
+      "description": "Turn back writing a file with echo > file or a cat heredoc and point to the Write tool.",
+      "default": true
+    },
+    "enforceInBypass": {
+      "type": "boolean",
+      "title": "Also in bypass-permissions mode",
+      "description": "Keep turning commands back in bypass-permissions mode, whose system prompt tells Claude it may read, search and edit through Bash.",
+      "default": false
+    }
+  }
+}

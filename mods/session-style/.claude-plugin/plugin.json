@@ -1,0 +1,26 @@
+{
+  "name": "session-style",
+  "version": "0.1.0",
+  "description": "Gives every session in a project the same prompt color and name prefix, from .claude/session-style.json or your defaults",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "color": {
+      "type": "string",
+      "title": "Default color",
+      "description": "The prompt bar color (/color) for projects whose .claude/session-style.json sets none; \"none\" leaves it alone.",
+      "options": ["none", "red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan"],
+      "default": "none"
+    },
+    "namePrefix": {
+      "type": "string",
+      "title": "Default name prefix",
+      "description": "Put before every session name (/rename) in projects whose .claude/session-style.json sets none; empty for no prefix.",
+      "default": ""
+    }
+  }
+}

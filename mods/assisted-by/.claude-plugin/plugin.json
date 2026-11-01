@@ -1,0 +1,18 @@
+{
+  "name": "assisted-by",
+  "version": "0.1.0",
+  "description": "Writes Claude's commit and PR attribution as an Assisted-by trailer instead of Co-Authored-By, keeping the model name",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "userConfig": {
+    "format": {
+      "type": "string",
+      "title": "Trailer format",
+      "description": "The line written in place of Claude's Co-Authored-By trailer. {model} is the name Claude Code wrote (\"Claude Opus 4.6\"), {email} its address.",
+      "default": "Assisted-by: {model}"
+    }
+  }
+}

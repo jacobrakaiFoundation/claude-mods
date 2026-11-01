@@ -1,0 +1,19 @@
+{
+  "name": "skill-blocklist",
+  "version": "0.1.0",
+  "description": "Disables individual skills, plugin skills included: hidden from the model's skill listing and the typeahead, refused at the Skill tool, and never loaded",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "userConfig": {
+    "skills": {
+      "type": "string",
+      "multiple": true,
+      "title": "Blocked skills",
+      "description": "Skill names to disable, as the Skill tool names them: \"commit\", or \"plugin:skill\" for a plugin's skill.",
+      "default": []
+    }
+  }
+}

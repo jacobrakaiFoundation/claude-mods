@@ -1,0 +1,26 @@
+{
+  "name": "buddy",
+  "version": "0.1.0",
+  "description": "A small companion above the prompt that thinks while Claude works, cheers when a turn lands, frets at a tool error and naps when left alone",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "name": {
+      "type": "string",
+      "title": "Buddy's name",
+      "description": "What your companion is called, as in \"Pip is thinking…\".",
+      "default": "Pip"
+    },
+    "species": {
+      "type": "string",
+      "title": "Species",
+      "description": "Which creature keeps you company.",
+      "options": ["cat", "owl", "duck", "ghost", "blob"],
+      "default": "cat"
+    }
+  }
+}

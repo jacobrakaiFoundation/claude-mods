@@ -1,0 +1,20 @@
+{
+  "name": "timestamps",
+  "version": "0.1.0",
+  "description": "Shows the local time (HH:MM:SS) each user and assistant message was added, beside it in the transcript",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "clock": {
+      "type": "string",
+      "title": "Clock",
+      "description": "24-hour (14:05:09) or 12-hour (2:05:09 PM) times.",
+      "options": ["24h", "12h"],
+      "default": "24h"
+    }
+  }
+}

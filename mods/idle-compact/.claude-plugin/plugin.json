@@ -1,0 +1,25 @@
+{
+  "name": "idle-compact",
+  "version": "0.1.0",
+  "description": "Compacts the conversation after a stretch of idle minutes, before the prompt cache expires, so the next prompt does not pay to rebuild it",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "userConfig": {
+    "idleMinutes": {
+      "type": "number",
+      "title": "Idle minutes",
+      "description": "Minutes after the last response with no new prompt before compacting. Keep it under your prompt cache's lifetime: 55 (the default) assumes a 1-hour cache; use 4 for a 5-minute one.",
+      "default": 55
+    },
+    "minContextPercent": {
+      "type": "number",
+      "title": "Minimum context percent",
+      "description": "Compact only when the context window is at least this full (0-100); a small context is cheap to rebuild.",
+      "default": 40
+    }
+  },
+  "types": "./types/index.d.ts"
+}

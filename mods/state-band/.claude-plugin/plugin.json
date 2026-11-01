@@ -1,0 +1,11 @@
+{
+  "name": "state-band",
+  "version": "0.1.0",
+  "description": "One line above the prompt that says whether Claude is working, waiting on you, done (and when), or stopped on an error",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "types": "./types/index.d.ts"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "idle-notify",
+  "version": "0.1.0",
+  "description": "Sends a desktop notification, and optionally a chime, when Claude has been waiting for you for a delay you choose",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "userConfig": {
+    "delaySeconds": {
+      "type": "number",
+      "title": "Delay (seconds)",
+      "description": "How long Claude waits for you, after a turn ends or while it asks a question, before the notification is sent.",
+      "default": 60
+    },
+    "sound": {
+      "type": "boolean",
+      "title": "Play a chime",
+      "description": "Play a short chime with the notification (macOS).",
+      "default": false
+    }
+  }
+}
