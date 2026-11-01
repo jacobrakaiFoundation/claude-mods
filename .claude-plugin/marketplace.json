@@ -1,0 +1,10 @@
+{
+  "name": "claude-mods",
+  "owner": { "name": "Jacobrakai Foundation" },
+  "description": "Claude Code mods from the Jacobrakai Foundation: usage meters, named tool groups and a fixed turn word",
+  "plugins": [
+    { "name": "usage-meter", "source": "./mods/usage-meter" },
+    { "name": "tool-group-names", "source": "./mods/tool-group-names" },
+    { "name": "turn-word", "source": "./mods/turn-word" }
+  ]
+}

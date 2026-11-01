@@ -1,0 +1,11 @@
+{
+  "name": "usage-meter",
+  "version": "0.2.0",
+  "description": "A band above the prompt showing context fill, 5-hour and 7-day rate limits, and session cost",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "types": "./types/index.d.ts"
+}

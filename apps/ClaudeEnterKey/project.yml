@@ -1,0 +1,22 @@
+name: ClaudeEnterKey
+options:
+  bundleIdPrefix: org.jacobrakai
+  deploymentTarget:
+    macOS: "14.0"
+targets:
+  ClaudeEnterKey:
+    type: application
+    platform: macOS
+    sources: [Sources]
+    info:
+      path: Sources/Info.plist
+      properties:
+        LSUIElement: true
+        CFBundleDisplayName: Claude Enter Key
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.jacobrakai.ClaudeEnterKey
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_IDENTITY: "-"
+        ENABLE_HARDENED_RUNTIME: NO
+        GENERATE_INFOPLIST_FILE: YES

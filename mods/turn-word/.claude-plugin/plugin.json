@@ -1,0 +1,18 @@
+{
+  "name": "turn-word",
+  "version": "0.1.0",
+  "description": "Replaces the rotating word in the turn's closing line (Baked, Brewed, Cogitated...) with one fixed word",
+  "author": {
+    "name": "Jacobrakai Foundation"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jacobrakaiFoundation/claude-mods",
+  "userConfig": {
+    "word": {
+      "type": "string",
+      "title": "Turn word",
+      "description": "The word the turn's closing line uses, as in \"Worked for 3s\".",
+      "default": "Worked"
+    }
+  }
+}
